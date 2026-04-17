@@ -1,0 +1,641 @@
+body {
+    background-image: url(./assets/blueplaid.jpg);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2px;;
+}
+
+.blue {
+    color:#2b99ff;
+    font-weight: 600;
+}
+.pink {
+    color:#ff83b0;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+width: 9px;
+height: 5px;
+scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+/* border: 1px solid black; */
+border-radius: 20px;
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(90deg, #6cc7e2, #c4f1ff, #6cc7e2);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active {
+background: linear-gradient(90deg, #ff9fc4, #ffd1e3, #ff9fc4);
+}
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.noselect,
+#cake img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.glow {
+    transition: ease 0.5s;
+}
+
+.glow:hover {
+    filter: drop-shadow(0 0 3px #ff9cc2) drop-shadow(0 0 6px #ffc0d896);
+}
+
+.sphidden {
+    display: none;
+}
+
+#main {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+
+    width: 100%;
+    height: 900px;
+
+    margin-top: -450px;
+
+    /*background-color: rgba(255, 240, 240, 0.61);*/
+}
+
+#border {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    width: 100%;
+    height: 30px;
+
+    background-image: url(./assets/tulipdivider.gif);
+    background-size: contain;
+}
+
+#middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    width: 420px;
+    height: 554px;
+
+    margin-top: -315px;
+    margin-left: -210px;
+
+    text-align: center;
+    /*background-color: pink;*/
+}
+
+#cake {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 450px;
+    height: 505px;
+
+    /*background-color: aliceblue;
+    background-image: url(./assets/tutucake.png);
+    background-size: contain;*/
+}
+
+#tulip {
+    position: absolute;
+    top: 0px;
+    left: 143px;
+
+    width: 150px;
+    height: 197px;
+
+    background-image: url(./assets/tutu1.png);
+    background-size: contain;
+}
+
+
+
+/*#threeA {
+    cursor: pointer;
+    position: absolute;
+    top: 333px;
+    left: 159px;
+
+    width: 35px;
+    height: 36px;
+}
+
+#threeB {
+    cursor: pointer;
+    position: absolute;
+    top: 335px;
+    left: 249px;
+
+    width: 35px;
+    height: 36px;
+}
+
+#four {
+    cursor: pointer;
+    position: absolute;
+    top: 167px;
+    left: 173px;
+
+    width: 88px;
+    height: 72px;
+}
+
+#fiveA {
+    cursor: pointer;
+    position: absolute;
+    top: 183px;
+    left: 134px;
+
+    width: 42px;
+    height: 50px;
+}
+
+#fiveB {
+    cursor: pointer;
+    position: absolute;
+    top: 183px;
+    left: 261px;
+
+    width: 44px;
+    height: 49px;
+}
+
+#fiveC {
+    cursor: pointer;
+    position: absolute;
+    top: 312px;
+    left: 103px;
+
+    width: 54px;
+    height: 61px;
+}
+
+#fiveD {
+    cursor: pointer;
+    position: absolute;
+    top: 320px;
+    left: 195px;
+
+    width: 53px;
+    height: 56px;
+
+
+}
+
+#fiveE {
+    cursor: pointer;
+    position: absolute;
+    top: 313px;
+    left: 284px;
+
+    width: 53px;
+    height: 59px;
+}
+
+#six {
+    cursor: pointer;
+    position: absolute;
+    top: 204px;
+    left: 158px;
+
+    width: 44px;
+    height: 50px;
+}
+
+#sixB {
+    cursor: pointer;
+    position: absolute;
+    top: 206px;
+    left: 233px;
+
+    width: 44px;
+    height: 48px;
+}
+
+#flow3A,
+#flow3B,
+#choco,
+#strawb5A,
+#strawb5B,
+#strawb5C,
+#strawb5D,
+#strawb5E,
+#strawb6,
+#strawb6B {
+    transition: ease 0.3s;
+}
+
+#cake:has(#threeA:hover) #flow3A,
+#cake:has(#threeB:hover) #flow3B,
+#cake:has(#four:hover) #choco,
+#cake:has(#fiveA:hover) #strawb5A,
+#cake:has(#fiveB:hover) #strawb5B,
+#cake:has(#fiveC:hover) #strawb5C,
+#cake:has(#fiveD:hover) #strawb5D,
+#cake:has(#fiveE:hover) #strawb5E,
+#cake:has(#six:hover) #strawb6,
+#cake:has(#sixB:hover) #strawb6B {
+    transform: translateY(-7px);
+}*/
+
+#choco:active {
+    filter: drop-shadow(0 0 5px #ff83b0) drop-shadow(0 0 5px #ffe058);
+}
+
+#chandy {
+    position: absolute;
+    top: 220px;
+    left: 555px;
+
+    width: 150px;
+    height: 122px;
+
+    background-image: url(./assets/chandygup.png);
+    background-size: contain;
+}
+
+#pp {
+    position: absolute;
+    top: 350px;
+    left: -130px;
+
+    width: 130px;
+    height: 151px;
+
+    background-image: url(./assets/chiikawaF.png);
+    background-size: contain;
+}
+
+#cats {
+    position: absolute;
+    top: 350px;
+    left: 425px;
+
+    width: 170px;
+    height: 176px;
+
+    background-image: url(./assets/chiikawa_Nico.png);
+    background-size: contain;
+}
+
+#mishu {
+    position: absolute;
+    top: 425px;
+    left: -245px;
+
+    width: 125px;
+    height: 131px;
+
+    background-image: url(./assets/chiikawaB.png);
+    background-size: contain;
+}
+
+#soren {
+    position: absolute;
+    top: 390px;
+    left: 565px;
+
+    width: 160px;
+    height: 151px;
+
+    background-image: url(./assets/soren.png);
+    background-size: contain;
+}
+
+#jelly {
+    position: absolute;
+    top: 450px;
+    left: 710px;
+
+    width: 85px;
+    height: 94px;
+
+    background-image: url(./assets/usagiC2.png);
+    background-size: contain;
+}
+
+#name {
+    cursor: pointer;
+    position: absolute;
+    top: 420px;
+    left: 150px;
+
+    width: 130px;
+    height: 165px;
+
+    background-image: url(./assets/chiikawaE.png);
+    background-size: contain;
+}
+
+#jinx {
+    position: absolute;
+    top: 390px;
+    left: 0px;
+
+    width: 140px;
+    height: 164px;
+
+    background-image: url(./assets/hachiwareE.png);
+    background-size: contain;
+}
+
+#ahiru {
+    position: absolute;
+    top: 390px;
+    left: 290px;
+
+    width: 155px;
+    height: 183px;
+
+    background-image: url(./assets/usagiE.png);
+    background-size: contain;
+}
+
+#beff {
+    position: absolute;
+    top: 510px;
+    left: 70px;
+
+    width: 112px;
+    height: 128px;
+
+    background-image: url(./assets/chiikawaL.png);
+    background-size: contain;
+}
+
+#nico {
+    position: absolute;
+    top: 502px;
+    left: 240px;
+
+    width: 113px;
+    height: 137px;
+
+    background-image: url(./assets/hachiwareB.png);
+    background-size: contain;
+}
+
+#kami {
+    position: absolute;
+    top: 500px;
+    left: 395px;
+
+    width: 170px;
+    height: 147px;
+
+    background-image: url(./assets/damgom.png);
+    background-size: contain;
+}
+
+#alicia {
+    position: absolute;
+    top: 490px;
+    left: 510px;
+
+    width: 155px;
+    height: 161px;
+
+    background-image: url(./assets/hachiwareA.png);
+    background-size: contain;
+}
+
+#imani {
+    position: absolute;
+    top: 475px;
+    left: -130px;
+
+    width: 155px;
+    height: 161px;
+
+    background-image: url(./assets/momongaA2.png);
+    background-size: contain;
+}
+
+#haza {
+    position: absolute;
+    top: 552px;
+    left: -40px;
+
+    width: 170px;
+    height: 137px;
+
+    background-image: url(./assets/chiikawaJ2.png);
+    background-size: contain;
+}
+
+#emma {
+    position: absolute;
+    top: 554px;
+    left: 315px;
+
+    width: 120px;
+    height: 136px;
+
+    background-image: url(./assets/chiikawaK.png);
+    background-size: contain;
+}
+
+#chandy:hover span,
+#pp:hover span,
+#cats:hover span,
+#mishu:hover span,
+#soren:hover span,
+#jelly:hover span,
+#name:hover span,
+#jinx:hover span,
+#ahiru:hover span,
+#beff:hover span,
+#nico:hover span,
+#kami:hover span,
+#alicia:hover span,
+#imani:hover span,
+#haza:hover span,
+#emma:hover span {
+    position: absolute;
+    display: block;
+}
+
+.msgcase {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 60px;
+    padding-left: 40px;
+
+    width: 210px;
+    height: 172px;
+
+    background-image: url(./assets/cloud2.png);
+    background-size: contain;
+
+    filter: drop-shadow(0 0 3px #fff);
+}
+
+.msgbox {
+    position: relative;
+    top: 2px;
+    left: 0px;
+
+    padding-right: 5px;
+
+    width: 175px;
+    height: 105px;
+
+    overflow-y: auto;
+
+    /*background-color: pink;*/
+}
+
+#tulip {
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255));
+}
+
+#tulip:hover span {
+    display: block;
+}
+
+.bounce:hover,
+.bounce2:active {
+    animation: bounce 0.3s infinite;
+    -webkit-animation: bounce 0.3s infinite;
+    -moz-animation: bounce 0.3s infinite;
+    -o-animation: bounce 0.3s infinite;
+}
+
+
+/* bounce animation from https://stackoverflow.com/questions/40628410/trying-to-make-a-link-bounce-on-hover */
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+    -webkit-transform: translateY(0);
+}
+    50% {
+        -webkit-transform: translateY(-7px);
+}
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+    -moz-transform: translateY(0);
+}
+    50% {
+    -moz-transform: translateY(-7px);
+}
+}
+@-o-keyframes bounce {
+    0%,
+    100% {
+    -o-transform: translateY(0);
+}
+    50% {
+    -o-transform: translateY(-7px);
+}
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+}
+    50% {
+        transform: translateY(-7px);
+}
+}
+
+.spinning:hover {
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.spinning:active {
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 130ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.moveup {
+    transition: ease 0.3s;
+}
+
+.moveup:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.float {
+    animation: floating 3.5s ease-in-out infinite;
+}
+
+.float2 {
+    animation: floating2 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    25%  { transform: translate(0, 8px); }
+    50%  { transform: translate(0, 0px); }
+    75%   { transform: translate(0, 5px); }   
+    100%   { transform: translate(0, -0px); }    
+}
+
+.squish {
+    cursor: pointer!important;
+}
+
+.squish:active {
+    cursor: pointer;
+    animation-name: squish;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+}
+
+@keyframes squish {
+    0% {transform: scale(1)}
+    35% {transform: scale(1, 0.95)}
+    65% {transform: scale(1.03, 0.95) translateX(2px)}
+    100% {transform: scale(1)}
+}
