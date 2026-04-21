@@ -10,7 +10,9 @@
     <title>yayy tulip day!</title>
 </head>
 <body>
-    <!-- <audio id="unpapa" src="./assets/yaya unpapa.mp3"></audio> -->
+    <audio id="opera" src="./assets/opera.mp3"></audio>
+    <audio id="squeak" src="./assets/squeak.mp3"></audio>
+    <audio id="yaya_unpapa" src="./assets/yaya unpapa.mp3"></audio>
     <div id="border"></div>
 
     <div id="main">
@@ -304,9 +306,14 @@
                 </span>
             </div>
 
-            <audio id="opera" src="./assets/opera.mp3"></audio>
-            <img src="./assets/chiikawaH.png" onclick="play()" class="draggable spinning noselect" style="position:absolute;top:558px;left:-222px;height:125px;">
-
+            <img
+                src="./assets/chiikawaH.png"
+                data-sound="opera"
+                data-enable-pause
+                data-enable-restart
+                class="draggable spinning noselect"
+                style="position:absolute;top:558px;left:-222px;height:125px;"
+            >
 
         </div>
     </div>

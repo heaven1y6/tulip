@@ -1,16 +1,22 @@
-function play() {
-    var audio = document.getElementById("opera");
-    audio.play();
-}
-
 document.querySelectorAll("[data-sound]").forEach((el) => {
-    el.addEventListener("click", () => {
-    playSound(el.dataset.sound);
+    el.addEventListener("mousedown", () => {
+        playSound(el.dataset.sound);
     });
+    if ('enablePause' in el.dataset) {
+        el.addEventListener("mouseup", () => {
+            stopSound(el.dataset.sound, 'enableRestart' in el.dataset);
+        });
+    }
 });
 
 const playSound = (fileName) => {
-    const audio = new Audio();
-    audio.src = `./assets/${fileName}.mp3`;
+    const audio = document.getElementById(fileName);
     audio.play();
+};
+
+const stopSound = (fileName, enableRestart) => {
+    const audio = document.getElementById(fileName);
+    audio.pause();
+    if (enableRestart)
+        audio.currentTime = 0;
 };
